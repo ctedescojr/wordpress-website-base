@@ -1,0 +1,63 @@
+# Arquivos sensíveis
+.env
+wp-config.php
+
+# Dados do banco (não a configuração)
+mysql/data/
+mysql/*.log
+
+# WordPress core
+wp-admin/
+wp-includes/
+index.php
+wp-*.php
+xmlrpc.php
+license.txt
+readme.html
+
+# Uploads e cache
+wp-content/uploads/
+wp-content/cache/
+wp-content/backups/
+
+# Plugins baixados (manter apenas os customizados)
+wp-content/plugins/akismet/
+wp-content/plugins/hello.php
+wp-content/plugins/woocommerce/
+wp-content/plugins/wordpress-seo/
+
+# Temas padrão
+wp-content/themes/twenty*/
+
+# Logs
+*.log
+wp-content/debug.log
+
+# Docker
+.docker/
+
+# VS Code
+.vscode/
+!.vscode/extensions.json
+!.vscode/settings.json
+
+# Sistema
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# Node modules (se usar)
+node_modules/
+npm-debug.log
+
+# Composer (se usar)
+vendor/
+
+# Windows specific
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
