@@ -1,6 +1,6 @@
 # PowerShell script for creating WordPress project structure in Windows environment
 
-Write-Host "📁 Creating WordPress project structure..." -ForegroundColor Cyan
+Write-Host ">> Creating WordPress project structure..." -ForegroundColor Cyan
 
 # Create all necessary folders
 $folders = @(
@@ -105,17 +105,17 @@ if (-not (Test-Path -Path ".env")) {
     Copy-Item -Path ".env.example" -Destination ".env"
 }
 
-Write-Host "✅ Structure created!" -ForegroundColor Green
+Write-Host "[OK] Structure created!" -ForegroundColor Green
 Write-Host ""
-Write-Host "📋 Project structure:" -ForegroundColor Cyan
-Write-Host "├── mysql/my.cnf          ✅ MySQL Configuration" -ForegroundColor White
-Write-Host "├── uploads.ini           ✅ PHP Configuration" -ForegroundColor White
-Write-Host "├── .env                  ✅ Environment variables" -ForegroundColor White
-Write-Host "├── .env.example          ✅ Example for git" -ForegroundColor White
-Write-Host "├── wp-content/           ✅ WordPress content" -ForegroundColor White
-Write-Host "└── scripts/              ✅ Automation scripts" -ForegroundColor White
+Write-Host ">> Project structure:" -ForegroundColor Cyan
+Write-Host "|-- mysql/my.cnf          [OK] MySQL Configuration" -ForegroundColor White
+Write-Host "|-- uploads.ini           [OK] PHP Configuration" -ForegroundColor White
+Write-Host "|-- .env                  [OK] Environment variables" -ForegroundColor White
+Write-Host "|-- .env.example          [OK] Example for git" -ForegroundColor White
+Write-Host "|-- wp-content/           [OK] WordPress content" -ForegroundColor White
+Write-Host "'-- scripts/              [OK] Automation scripts" -ForegroundColor White
 Write-Host ""
-Write-Host "⚠️  REMEMBER:" -ForegroundColor Yellow
+Write-Host "[!] REMEMBER:" -ForegroundColor Yellow
 Write-Host "1. Edit .env with your passwords" -ForegroundColor Yellow
 Write-Host "2. Run: docker-compose up -d" -ForegroundColor Yellow
 Write-Host "3. Run the setup script: ./scripts/setup.ps1" -ForegroundColor Yellow
